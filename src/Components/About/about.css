@@ -1,0 +1,113 @@
+:root {
+    --hightlight-bg-about:linear-gradient(267deg, #DF8908 -5.09%, #B415FF 102.28%);
+}
+
+.about{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 80px;
+ margin: 80px 170px;   
+}
+
+.about-title h2 {
+    padding: 0 30px;
+    font-size: 65px;
+    font-weight: 100;
+}
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.about-section {
+    display: flex;
+    gap: 80px;
+  margin-bottom: 20px;
+}
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+.about-left img {
+    border-radius: 12px;
+    width: 332px;
+    height: 480px;
+    object-fit: cover;
+    box-shadow: 0 0 3px 0px wheat;
+    transition: 0.4s ease;
+}
+.about-left img:hover{
+  transform: scale(1.01);
+  border: 1px solid #B415FF;
+}
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+.about-skill {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: 0.3s;
+}
+.about-skill p{
+   max-width: 150px;
+   font-size: 20px;
+   font-weight: 300;
+}
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: var(--hightlight-bg-about);
+}
+@media screen and (max-width: 768px) {
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .about-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+    text-align: center;
+    font-size: 18px;
+    }
+}
